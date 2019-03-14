@@ -1,3 +1,4 @@
 # VladTrokhymchuk.github.io
-Мои домашние сайты
+Портфолио
+
 [МЛМ-биржа](https://vladtrokhymchuk.github.io/lesson_12/"МЛМ-биржа")
