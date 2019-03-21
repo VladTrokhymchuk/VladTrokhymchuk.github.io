@@ -1,0 +1,111 @@
+/* .box {
+    width: 150px;
+    height: 150px;
+    background-color: brown;
+    margin-bottom: 15px;
+}
+
+button {
+    width: 80px;
+    height: 30px;
+    background-color: #000;
+    border: none;
+    color: aliceblue;
+    border-radius: 10px;
+}
+
+.circle {
+    background: blue;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 15px 0 ; 
+}
+
+.heart {
+    
+    margin: 30px 0 30px 20px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: pink;
+    height: 50px;
+    width: 50px;
+    transform: rotate(-45deg); ;
+  }
+  .heart::after {
+    background-color: pink;
+    content: "";
+    border-radius: 50%;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 0px;
+    left: 25px;
+  }
+  .heart::before {
+    content:"";
+    background-color: pink;
+    border-radius: 50%;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: -25px;
+    left: 0px;
+  }
+  
+ .black {
+   width: 100px;
+   height: 100px;
+    background-color: #000;
+    color: aliceblue;
+ }
+ */
+/*----------19---------*/
+
+/* button {
+  width: 100px;
+  height: 50px;
+  background-color: #000;
+  border: none;
+  color: aliceblue;
+  
+}
+
+.box {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border: solid 3px red;
+  margin: 50px 0;
+}
+
+.elem {
+  position: relative;
+    width: 90px;
+    height: 90px;
+    background-color: #698;
+}
+.btn-block {
+  background: #698;
+} */
+
+.box {
+  
+  width: 400px;
+  height: 350px;
+  overflow: scroll;
+  border: solid 3px red;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 10px;
+}
+button {
+  width: 100px;
+  height: 50px;
+  background-color: #000;
+  border: none;
+  color: aliceblue;
+  
+}
