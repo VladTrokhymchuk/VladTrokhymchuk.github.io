@@ -102,4 +102,4 @@ btn.addEventListener('click', function() {
 //1 просто вызов функции получим window/undefined
 //2 метод обекта - this = обект
 //3 конструктор (new) - this = новый созданый обект
-//4 указание конкретного контекста call, apply, bind
+//4 указание конкретного контекста call, apply, bind99
