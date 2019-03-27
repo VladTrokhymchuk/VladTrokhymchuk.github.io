@@ -109,3 +109,14 @@ button {
   color: aliceblue;
   
 }
+
+input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  border: solid 2px #8a2be26b;
+  border-radius: 2px;
+  height: 35px;
+  width: 250px; 
+  
+}
