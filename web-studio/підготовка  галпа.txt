@@ -1,0 +1,14 @@
+npm ls -g --depth=0 список модулей
+npm i -g gulp-cli
+
+-------------------
+Для каждого нового проекта 
+
+1/ cd C:\Users\Влад\Desktop\barbershop
+2/ в src кладем код
+3/копипастим gulpfile.js и package.json
+npm up
+2/ npm i gulp
+3/ создать gulpfile.js
+4/node smart-grid-config.js //Создание сетки
+ 
