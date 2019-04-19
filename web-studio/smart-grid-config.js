@@ -5,7 +5,7 @@ var settings = {
     offset: '30px', /* gutter width px || % || rem */
     mobileFirst: false, /* mobileFirst ? 'min-width' : 'max-width' */
     container: {
-        maxWidth: '1060px', /* max-width оn very large screen */
+        maxWidth: '1170px', /* max-width оn very large screen */
         fields: '20px' /* side fields */
     },
     breakPoints: {
@@ -16,7 +16,7 @@ var settings = {
             width: '992px'
         },
         sm: {
-            width: '720px',
+            width: '768px',
             fields: '15px' /* set fields only if you want to change container.fields */
         },
         xs: {
