@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/lightslider.css" />
 
@@ -34,8 +35,8 @@
         </div>
     </div>
 
-
-    <header class="navbar">
+<header>
+     <div class="navbar">
         <div class="wrapper">
             <div class="row">
                 <div class="logo">
@@ -73,14 +74,22 @@
                 </div>
             </div>
         </div>
-    </header>
+    </div>
     <!-- ==================================== 
 	Contenedor Slider 
 	=======================================-->
     <section id="slider" class="container">
-
+       
         <ul class="slider-wrapper">
-
+        <div class="head__desc">
+            <h1>Web studio full cycle</h1>
+            <h2>Create projects of any level of complexity</h2>
+            <div class="head__form">
+                <input type="text" name="name" id="" placeholder="Your name">
+                <input type="text" name="phone" id="" placeholder="Your phone">
+                <button>Get a quote</button>
+            </div>
+        </div>
             <li class="current-slide">
                 <img src="img/slide1.jpg" title="" alt="">
             </li>
@@ -90,11 +99,20 @@
             <li>
                 <img src="img/slide3.jpg" title="" alt="">
             </li>
+            <li>
+                <img src="img/slide4.jpg" title="" alt="">
+            </li>
             <ul id="control-buttons" class="control-buttons"></ul>
+           
         </ul>
         <!-- Sombras -->
         <!-- Controles de Navegacion -->
     </section>
+    <img class="mouse" src="img/mouse.png" title="" alt="">
+</header>
+   
+    
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa doloribus odit dignissimos animi assumenda! Doloremque laboriosam, fuga iure inventore veniam minima modi minus nisi quidem, repellendus cum atque voluptates odio!</h1>
 
 
 
@@ -104,6 +122,5 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <!-- <script src="js/lightslider.js"></script> -->
     <script src="js/slider.js"></script>
-
 
 </body>
