@@ -31,7 +31,13 @@ Theme Name: Piramid
 
 
 body {
+    // font-family: 'ClearSansRegular';
+    //font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     .reg();
+}
+
+p {
+    color: #767676;
 }
 
 // * {
@@ -110,6 +116,20 @@ ul {
             font-weight: bold;
             .reg();
             //.size(3);
+
+            .sm-block( {
+                margin-top: 130px;
+                font-size: 46px;
+            }
+
+            );
+
+            .xs-block( {
+                font-size: 36px;
+                text-align: center;
+            }
+
+            );
         }
 
         h2 {
@@ -117,7 +137,21 @@ ul {
             color: #FFF;
             margin-bottom: 84px;
             .reg();
+
+            .sm-block( {
+                font-size: 20px;
+            }
+
+            );
+
+            .xs-block( {
+                font-size: 18px;
+                text-align: center;
+            }
+
+            );
         }
+
     }
 }
 
@@ -235,6 +269,25 @@ ul {
     bottom: 0;
     text-align: center;
     z-index: 999;
+
+
+    .sm-block( {
+        margin-bottom: 125px;
+    }
+
+    );
+
+    .xs-block( {
+        margin-bottom: 20px;
+    }
+
+    );
+
+    .iphone-block( {
+        margin-bottom: 10px;
+    }
+
+    );
 }
 
 .control-buttons li {
@@ -273,7 +326,7 @@ ul {
     position: relative;
     display: flex;
     /* top: auto; */
-    bottom: 89px;
+    bottom: 85px;
     //justify-content: center;
     // width: 100%;
     margin: 0 auto;
@@ -283,7 +336,17 @@ ul {
     height: 79px;
     //border: rgb(231, 15, 15) 2px solid;
 
+    .sm-block( {
+        bottom: 115px;
+    }
 
+    );
+
+    .xs-block( {
+        display: none;
+    }
+
+    );
 
 }
 
@@ -398,30 +461,34 @@ ul {
                 }
 
                 .sm-block( {
-                    
-                    
+
+
                     font-size: 14px;
-                   // font-weight: bold;
+                    // font-weight: bold;
                     //padding: 8px 0;
                     border-radius: 3px;
                     //text-align: center;
                     //border-style: none;
                     //height: 36px;
-                   // width: 165px;
+                    // width: 165px;
 
                     &:hover {
                         color: #fff;
                         background: #fbb02c;
                     }
                 }
+
                 );
             }
 
             .menu a:last-child {
                 border-bottom: none;
-                .sm-block({
+
+                .sm-block( {
                     border-bottom: 1px solid #7a8699;
-                });
+                }
+
+                );
             }
 
 
@@ -523,7 +590,7 @@ ul {
     flex-wrap: wrap;
 
     .lg-block( {
-        width: 100%;
+        width: 80%;
     }
 
     );
@@ -587,3 +654,51 @@ ul {
 
     }
 }
+
+
+/////////////////////////////////////////////////////////////
+//////////////////  MAIN   ///////////////////////////////////
+
+//////////////////  Services   ///////////////////////////////////
+
+
+.services {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+
+    .title {
+        text-align: center;
+        align-items: center;
+        h1 {
+            font-size: 28px;
+            font-family: sans-serif;
+            font-weight: bold;
+            color: #2c2e30;
+            padding-bottom: 30px;
+        }
+        .dash {
+            background: #fbb02c;
+            width: 30px;
+            height: 3px;
+            margin: 0 auto;
+            margin-bottom: 55px;
+        }
+        p {
+            font-size: 18px;
+            margin-bottom: 50px;
+        }
+    }
+
+    .kards {
+        display: flex;
+        
+        &__items {
+            display: flex;
+
+        }
+    }
+}
+
+//////////////////  Services   ///////////////////////////////////
