@@ -40,6 +40,11 @@ p {
     color: #767676;
 }
 
+h2 {
+    color: #2c2e30;
+    font-size: 21px;
+}
+
 // * {
 //     margin: 0;
 //     padding: 0;
@@ -570,6 +575,10 @@ ul {
             color: #FFF;
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
+            .num {
+                color: #FFF;
+            }
+
             .md-block( {
                 display: none;
             }
@@ -629,32 +638,33 @@ ul {
         );
     }
 
-    button {
-        color: #000;
-        background: #fbb02c;
-        font-size: 14px;
-        font-weight: bold;
-        padding: 8px 0;
-        border-radius: 3px;
-        text-align: center;
-        border-style: none;
-        height: 36px;
-        width: 165px;
 
-        &:hover {
-            color: #fff;
-        }
-
-        .sm-block( {
-            width: 100%;
-
-        }
-
-        );
-
-    }
 }
 
+
+button {
+    color: #000;
+    background: #fbb02c;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px 0;
+    border-radius: 3px;
+    text-align: center;
+    border-style: none;
+    height: 36px;
+    width: 165px;
+
+    &:hover {
+        color: #fff;
+    }
+
+    .sm-block( {
+        width: 100%;
+
+    }
+
+    );
+}
 
 /////////////////////////////////////////////////////////////
 //////////////////  MAIN   ///////////////////////////////////
@@ -666,11 +676,12 @@ ul {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    
+
 
     .title {
         text-align: center;
         align-items: center;
+
         h1 {
             font-size: 28px;
             font-family: sans-serif;
@@ -678,6 +689,7 @@ ul {
             color: #2c2e30;
             padding-bottom: 30px;
         }
+
         .dash {
             background: #fbb02c;
             width: 30px;
@@ -685,6 +697,7 @@ ul {
             margin: 0 auto;
             margin-bottom: 55px;
         }
+
         p {
             font-size: 18px;
             margin-bottom: 50px;
@@ -693,12 +706,142 @@ ul {
 
     .kards {
         display: flex;
-        
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 100%;
+
         &__items {
             display: flex;
+            flex-direction: column;
+            flex-basis: 260px;
+            border: #e7e7e7 1px solid;
+            height: 445px;
+            margin-bottom: 100px;
+            align-items: center;
+            text-align: center;
 
+            .md-block( {
+                flex-basis: 350px;
+            }
+
+            );
+            // .xs-block({
+            //     flex-basis: 350px;
+            // });
+
+            //margin: 40px;
+            img {
+                margin: 40px 0 18px 0;
+                align-self: center;
+            }
+
+            h2 {
+                font-weight: bold;
+                line-height: 30px;
+                margin: 0 40px;
+                min-height: 60px;
+
+            }
+
+            p {
+                font-size: 14px;
+                line-height: 20px;
+                margin: 14px 40px;
+            }
+
+            //.size(3);
+            button {
+                margin-top: auto;
+                margin-bottom: 40px;
+                width: 80%;
+                // .md-block({
+                //     width: 80%;
+                // });
+            }
         }
     }
 }
 
 //////////////////  Services   ///////////////////////////////////
+
+//////////////////  benefits   ///////////////////////////////////
+.ben {
+    background: #f3f3f3;
+}
+
+.benefits {
+
+    .title {
+        text-align: center;
+        align-items: center;
+        padding: 80px 0 25px 0;
+
+        h1 {
+            font-size: 28px;
+            font-family: sans-serif;
+            font-weight: bold;
+            color: #2c2e30;
+            padding-bottom: 30px;
+        }
+
+        .dash {
+            background: #fbb02c;
+            width: 30px;
+            height: 3px;
+            margin: 0 auto;
+            margin-bottom: 55px;
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 50px;
+        }
+    }
+
+    &__items {
+        display: flex;
+        padding-bottom: 100px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            flex-direction: column;
+            //flex-basis: 500px;
+            width: 50%;
+
+            .sm-block( {
+                width: 100%;
+            }
+            );
+
+            //.size(6);
+            li {
+                //flex-basis: 555px;
+                padding: 0 0 60px 0;
+
+                img {
+                    float: left;
+                    margin: 0 30px 0 0;
+                }
+
+                h2 {
+                    margin: 10px 0 15px 100px;
+                    font-weight: bold;
+
+                }
+
+                p {
+                    margin-left: 100px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+}
+
+
+//////////////////  benefits   ///////////////////////////////////
