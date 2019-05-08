@@ -845,3 +845,55 @@ button {
 
 
 //////////////////  benefits   ///////////////////////////////////
+
+//////////////////  statistics   ///////////////////////////////////
+
+.statistics {
+    background: url(../img/statistics_bg.jpg) center no-repeat;
+    background-size: cover; 
+    padding: 100px 0;
+    margin-bottom: 50px;
+
+    &__items {
+       
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between; 
+            
+
+            li{
+                text-align: center;
+                .sm-block({
+                    min-width: 50%;
+                    margin-bottom: 30px;
+                   // flex-direction: column;
+                });
+
+                .xs-block({
+                    min-width: 100%;
+                    margin-bottom: 30px;
+                   // flex-direction: column;
+                });
+
+
+                
+                h2 {
+                    font-size: 35px;
+                    font-weight: bold;
+                    color: #FFF;
+                }
+                p {
+                    font-size: 16px;
+                    color: #fff;
+                }
+                img {
+                    height: 60px;
+                }
+
+            }
+        }
+    }
+}
+
+//////////////////  statistics   ///////////////////////////////////
