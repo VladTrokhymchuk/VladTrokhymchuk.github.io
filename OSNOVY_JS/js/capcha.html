@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <br /><input type="text" id="a" />
+    <br /><input type="text" id="b" placeholder="Ответ" />
+
+    <button type="submit" id="c"><?php _e('Отправить','lama'); ?> asdsd</button>
+
+    <script>
+        $(document).ready(function () {
+            var n1 = Math.round(Math.random() * 10 + 1);
+            var n2 = Math.round(Math.random() * 10 + 1);
+            $("#a").val(n1 + " + " + n2);
+            $("#c").click(function () {
+                if (eval($("#a").val()) == $("#b").val()) {
+                    alert("Да! Вы человек!");
+                } else {
+                    alert("Ошибка, неверный ответ");
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
