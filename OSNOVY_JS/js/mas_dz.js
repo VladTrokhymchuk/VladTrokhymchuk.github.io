@@ -817,19 +817,19 @@
 // function findOdd(A) {
 //     var result = {};
 //     var ass = 0;
-    
+
 //     for(var i = 0; i < A.length; i++){
 //       var num = A[i];
-      
+
 //       if (A[i] in result) {
 //         result[ A[i] ]++
 //         }else {
 //         result[ A[i] ] = 1
 //         }
-      
+
 //     }
 //   for(var key in result){
-    
+
 //     if(result[key] % 2 !== 0){
 //         ass = key;
 //     }
@@ -857,7 +857,7 @@
 ///////////////////////
 // function findOdd(a) {
 //     let cache = {};
-    
+
 //     a.forEach(function(number,i,current){
 //       if(number in cache) {
 //         cache[number]++
@@ -897,3 +897,25 @@
 // //if(callback = true) // element 
 
 // console.log(newArr)
+
+
+
+function firstDup(s) {
+    for (var i = 0; i < s.length; ++i) {
+        if (s.lastIndexOf(s[i]) != i) return s[i];
+    }
+}
+
+console.log(firstDup('tweet')); //t
+console.log(firstDup('Ode to Joy')); // ' '
+console.log(firstDup('ode to joy')); // o
+console.log(firstDup('bar')); // undefined
+console.log(firstDup('123123')); // 1
+console.log(firstDup('!@#$!@#$')); //- !
+
+function firstDup(s) {
+    for (let i = 0; i < s.length; i++) {
+        let copy = s.slice(i + 1);
+        if (~copy.indexOf(s[i])) return s[i]
+    }
+}
