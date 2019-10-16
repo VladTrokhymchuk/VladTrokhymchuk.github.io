@@ -170,18 +170,19 @@
      this.name = name;
      this.age = age;
 
-    //  this.summ = function(){
-    //      return this.name + ' - ' + this.age;
-    //  }
+     //  this.summ = function(){
+     //      return this.name + ' - ' + this.age;
+     //  }
  }
 
  People.prototype = obj1;
 
- People.prototype.summ = function(){
-         return this.name + ' - ' + this.age;
-     }
+ People.prototype.summ = function () {
+     return this.name + ' - ' + this.age;
+ }
 
-var Ben = new People('BEN VAFLER', 21);
-console.log(Ben.summ()); // obj1.summ()
+ var Ben = new People('BEN VAFLER', 21);
+ console.log(Ben.summ()); // obj1.summ()
+ console.log(obj1); // obj1.summ()
 
  /*********  OBJECT--2  ***************** */
