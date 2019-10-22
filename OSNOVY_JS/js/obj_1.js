@@ -188,58 +188,58 @@
 //  /*********  OBJECT--2  ***************** */
 
 
- /*********  OBJECT--3 window chast 1 ***************** */
+//  /*********  OBJECT--3 window chast 1 ***************** */
 
- window.onload = function () {
+//  window.onload = function () {
 
-     var wrap = document.getElementById('pupup_overlay');
+//      var wrap = document.getElementById('pupup_overlay');
 
-     var closeB = document.getElementById('pupup_close');
-     closeB.onclick = pupupClose;
+//      var closeB = document.getElementById('pupup_close');
+//      closeB.onclick = pupupClose;
 
-     //<div style = "dsiplay: block">
-     function pupup() {
-         wrap.style.display = 'block';
-         //wrap.style.opacity = 1;
-         pupupIn(1);
-     }
+//      //<div style = "dsiplay: block">
+//      function pupup() {
+//          wrap.style.display = 'block';
+//          //wrap.style.opacity = 1;
+//          pupupIn(1);
+//      }
 
-     function pupupClose() {
-         pupupOut(0);
-     }
+//      function pupupClose() {
+//          pupupOut(0);
+//      }
 
-     function pupupIn(x) {
-         // 0.05 0.1 0.15
-         var op = (wrap.style.opacity) ? parseFloat(wrap.style.opacity) : 0;
-         if (op < x) {
-             op += 0.05;
-             wrap.style.opacity = op;
-             // setTimeout(pupupIn, 50, x);
-             setTimeout(function () {
-                 pupupIn(x);
-             }, 20); // Кросбраузерное
-         }
-     }
+//      function pupupIn(x) {
+//          // 0.05 0.1 0.15
+//          var op = (wrap.style.opacity) ? parseFloat(wrap.style.opacity) : 0;
+//          if (op < x) {
+//              op += 0.05;
+//              wrap.style.opacity = op;
+//              // setTimeout(pupupIn, 50, x);
+//              setTimeout(function () {
+//                  pupupIn(x);
+//              }, 20); // Кросбраузерное
+//          }
+//      }
 
 
-     function pupupOut(x) {
-         // 0.05 0.1 0.15
-         var op = (wrap.style.opacity) ? parseFloat(wrap.style.opacity) : 0;
+//      function pupupOut(x) {
+//          // 0.05 0.1 0.15
+//          var op = (wrap.style.opacity) ? parseFloat(wrap.style.opacity) : 0;
 
-         if (op > x) {
-             op -= 0.05;
-             wrap.style.opacity = op;
-              setTimeout(pupupOut, 50, x);
-            //  setTimeout(function () {
-            //      pupupOut(x);
-            //  }, 20); // Кросбраузерное
-         }
-     }
+//          if (op > x) {
+//              op -= 0.05;
+//              wrap.style.opacity = op;
+//               setTimeout(pupupOut, 50, x);
+//             //  setTimeout(function () {
+//             //      pupupOut(x);
+//             //  }, 20); // Кросбраузерное
+//          }
+//      }
 
-     if (wrap.style.opacity == x) {
-         wrap.style.display = 'none';
-     }
-     setTimeout(pupup, 3000);
- }
+//      if (wrap.style.opacity == x) {
+//          wrap.style.display = 'none';
+//      }
+//      setTimeout(pupup, 3000);
+//  }
 
- /*********  OBJECT--3 window chast 1 ***************** */
+//  /*********  OBJECT--3 window chast 1 ***************** */
