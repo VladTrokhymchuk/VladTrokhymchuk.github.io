@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/main.min.css">
+
+    <link rel="stylesheet" href="/src/styles/reset.css">
+    <link rel="stylesheet" title="mystyle" href="/src/styles/onepage-scroll.css" id="styles-animations">
+    <link rel="stylesheet" href="/src/styles/custom-dropdown.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/src/scripts/jquery.onepage-scroll.min.js"></script>
+    <script type="text/javascript" src="https://ianlunn.co.uk/plugins/jquery-parallax/scripts/jquery.localscroll-1.2.7-min.js"></script>
+    <script type="text/javascript" src="https://ianlunn.co.uk/plugins/jquery-parallax/scripts/jquery.scrollTo-1.4.2-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+
+
+</head>
+
+<body>
+
+
+    <div class="menu-fixed">
+        <div class="menu-wrap">
+            <div class="menu ">
+                <div class="menu-logo">
+                    <img src="/src/images/Coca-Cola_logo_white 1.png" alt="Coca-Cola logo">
+                </div>
+                <div class="menu-box">
+
+
+
+                    <nav class="main-navigation ">
+                        <div class="button-wrapper">
+                            <button>
+                          <span class="inner-word">Main</span>
+                          <span class="hidden-word">Main</span>
+                        </button>
+
+                            <button>
+                            <span class="inner-word">About</span>
+                            <span class="hidden-word">About</span>
+                        </button>
+
+                            <button>
+                            <span class="inner-word">Products</span>
+                            <span class="hidden-word">Products</span>
+                        </button>
+
+                            <button>
+                            <span class="inner-word">Contacts</span>
+                            <span class="hidden-word">Contacts</span>
+                          </button>
+
+
+                        </div>
+                    </nav>
+
+                    <!-- <div class="menu-hamb">
+                       
+                        <button class="c-hamburger c-hamburger--htx">
+                        <span>toggle menu</span>
+                      </button>
+                        <nav class="sub-menu open">
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a>Home</a>
+                                </li>
+                                <li>
+                                    <a>About</a>
+                                </li>
+                                <li>
+                                    <a>Products</a>
+                                </li>
+                                <li>
+                                    <a>Contacts</a>
+                                </li>
+
+                            </ul>
+                        </nav>
+                    </div> -->
+
+
+
+                    <div class="menu-hamb-two">
+                        <div class="open"> <span class="cls"></span>
+                            <span>
+                                <ul class="sub-menu ">
+                                    <li>
+                                        <a href="#about" title="about">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="#skills" title="skills">About</a>
+                                    </li>
+                                    <li>
+                                        <a href="#jobs" title="jobs">Products</a>
+                                    </li>
+                                    <li>
+                                        <a href="#contact" title="contact">Contacts</a>
+                                    </li>
+                                </ul>
+                            </span>
+                            <span class="cls"></span>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+        <section class="screen-one">
+            <div class="wrap">
+                <div class="header-box">
+
+                    <div class="box-title">
+                        <h1 class="main-title">Main Site Title</h1>
+                        <p class="main-desc">Lorem ipsum descripsum</p>
+                        <div class="btn">
+                            <button type="button">Call to action</button>
+                        </div>
+
+                    </div>
+
+                    <div class="santa-box">
+                        <div class="item">
+                            <img class="santa" src="/src/images/dedcoca_2.png" alt="">
+                            <div class="cloud">
+                                <p>How how how !!!<br> Like it?<br> Scroll down for more !</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="content__item content__item_img">
+                <div class="item__img parallaxOnScroll" data-modificator='3'>
+                    <img class="snow" src="/src/images/snow.png" alt="placeholder+image">
+                </div>
+            </div>
+            <!-- <div class="paralax-snow" >
+                <img class="snow" src="/src/images/snow.png" alt="">
+            </div> -->
+            <div id="header_scroll" class="demo">
+                <a><span><img src="/src/images/Arrow.png" alt=""></span></a>
+            </div>
+
+        </section>
+
+
+        <section class="screen-two">
+            <div class="wrap">
+
+
+                <div class="tabs">
+                    <div class="tabs__left">
+                        <div class="box-title">
+                            <h1 class="main-title">At least somewhere you can feel new year atmosphere </h1>
+                            <p class="main-desc">Choose your present:</p>
+                        </div>
+                        <div class="container">
+                            <div role="tablist" class="tabs__control">
+                                <button data-tab="1" role="tab" aria-selected="true" aria-controls="tab-1" class="tabs__tab tabs__tab--current">
+                            <img src="/src/images/new-year-sock_1.png" alt="new year sock">
+                        </button>
+
+                                <button data-tab="2" role="tab" aria-selected="false" aria-controls="tab-2" class="tabs__tab" tabindex="-1">
+                            <img src="/src/images/caps-2_1.png" alt="caps">
+                        </button>
+
+                                <button data-tab="3" role="tab" aria-selected="false" aria-controls="tab-3" class="tabs__tab" tabindex="-1">
+                            <img src="/src/images/new-year-bag_1.png" alt="new year bag">
+                        </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tabs__contents">
+                        <div data-tab-content="1" role="tabpanel" tabindex="0" id="tab-1" class="tabs__content tabs__content--current">
+                            <div class="container">
+                                <div class="tabs__content-inner">
+                                    <div class="tabs__content-box">
+                                        <h2>Best sock ever</h2>
+                                        <p>Reuglar sock have no present inside <br> Lorem Ipsum is simply dumm y text of the printing and types etting industry. Lorem
+                                        </p>
+                                    </div>
+
+                                    <!-- <img src="/src/images/new-year-sock_1.svg" alt="new year sock"> -->
+                                    <img src="/src/images/new-year-sock_2.png" alt="new year sock">
+                                </div>
+                            </div>
+                        </div>
+                        <div data-tab-content="2" role="tabpanel" tabindex="0" id="tab-2" class="tabs__content" hidden>
+                            <div class="container">
+
+                                <div class="tabs__content-inner">
+                                    <div class="tabs__content-box">
+                                        <h2>Best caps ever</h2>
+                                        <p>Reuglar caps have no present inside Lorem Ipsum is simply dumm y text of the printing and types etting industry. Lorem
+                                        </p>
+                                    </div>
+
+
+                                    <!-- <img src="/src/images/caps-2_1.png" alt="caps"> -->
+                                    <img src="/src/images/caps-2_1.svg" alt="caps">
+                                </div>
+                            </div>
+                        </div>
+                        <div data-tab-content="3" role="tabpanel" tabindex="0" id="tab-3" class="tabs__content" hidden>
+                            <div class="container">
+                                <div class="tabs__content-inner">
+                                    <div class="tabs__content-box">
+                                        <h2>Best bag ever</h2>
+                                        <p>Reuglar bag have no present inside Lorem Ipsum is simply dumm y text of the printing and types etting industry. Lorem
+                                        </p>
+
+                                    </div>
+
+                                    <!-- <img src="/src/images/new-year-bag_1.png" alt="new year bag"> -->
+                                    <img src="/src/images/new-year-bag_1.svg" alt="new year bag">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="screen-three">
+            <div class="wrap">
+                <div class="box-form-contact">
+                    <div class="box-title">
+                        <h2 class="main-title">Write us for real presents</h2>
+
+                    </div>
+
+
+                    <div class="contact-form">
+                        <form action="">
+                            <div class="field">
+                                <input type="text" placeholder="Name" class="name-field">
+                            </div>
+
+                            <div class="field">
+                                <input type="text" placeholder="phone" class="phone-field">
+                            </div>
+
+                            <div class="dropdown-container">
+                                <div id="dd" class="wrapper-dropdown" tabindex="1">
+                                    <div id="dd2"></div>
+
+
+                                    <span class="gender">Gender</span>
+                                </div>
+                                <ul class="dropdown">
+                                    <li class="dropdown-option"><a href="#"> Boy</a></li>
+                                    <li class="dropdown-option"><a href="#"> Girl</a></li>
+                                </ul>
+                            </div>
+
+
+
+
+                            <div class="field">
+                                <input type="text" placeholder="Email" class="email-field">
+                            </div>
+
+                            <div class="field texterea">
+                                <input type="text" placeholder="Your witsh" class="project-field">
+                            </div>
+
+                            <!-- <button>Submit</button> -->
+
+                            <div class="form-group">
+                                <input type="checkbox" id="html">
+                                <label for="html">Whant Coca-cola with present ?</label>
+                            </div>
+                    </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+    </div>
+    </section>
+
+    </div>
+
+
+    <script>
+        // Get all tabs
+        var tabs_items = document.querySelectorAll(".tabs");
+
+        // Loop through all tabs
+        tabs_items.forEach(function(tabs) {
+            // Set variable
+            var controls = tabs.querySelector(".tabs__control");
+            var tab = controls.querySelectorAll(".tabs__tab");
+            var contents = tabs.querySelector(".tabs__contents");
+            var content = contents.querySelectorAll(".tabs__content");
+
+            // Loop through all tabs
+            tab.forEach(function(item) {
+                item.onclick = function(e) {
+                    e.preventDefault();
+
+                    // Get clicked tab ID
+                    var tabId = item.dataset.tab;
+
+                    // Set current tab
+                    tab.forEach(function(item) {
+                        if (tabId == item.dataset.tab) {
+                            item.classList.add("tabs__tab--current");
+                            item.setAttribute('aria-selected', 'true');
+                            item.removeAttribute('tabindex', '-1');
+                        } else {
+                            item.classList.remove("tabs__tab--current");
+                            item.setAttribute('aria-selected', 'false');
+                            item.setAttribute('tabindex', '-1');
+                        }
+                    });
+
+                    // Set current content
+                    content.forEach(function(item) {
+                        if (tabId == item.dataset.tabContent) {
+                            item.classList.add("tabs__content--current");
+                            item.removeAttribute('hidden', 'hidden');
+                        } else {
+                            item.classList.remove("tabs__content--current");
+                            item.setAttribute('hidden', 'hidden');
+                        }
+                    });
+                };
+            });
+        });
+    </script>
+
+    <script>
+        $('#select').click(function() {
+            $(this).addClass("success-select");
+        });
+    </script>
+
+    <script>
+        var toggles = document.querySelectorAll(".c-hamburger");
+
+        for (var i = toggles.length - 1; i >= 0; i--) {
+            var toggle = toggles[i];
+            toggleHandler(toggle);
+        };
+
+        function toggleHandler(toggle) {
+            toggle.addEventListener("click", function(e) {
+                e.preventDefault();
+                if (this.classList.contains("is-active") === true) {
+                    this.classList.remove("is-active");
+                    $('.open').removeClass('oppenned');
+                } else {
+                    this.classList.add("is-active");
+                    $(".open").addClass('oppenned');
+                }
+            });
+        }
+        $(".sub-menu li a").click(function(event) {
+            $(".open").removeClass('oppenned');
+            $(".c-hamburger").removeClass('is-active');
+        });
+    </script>
+
+    <!-- menu hamb 2 -->
+    <script>
+        $(document).ready(function() {
+            $(document).delegate('.open', 'click', function(event) {
+                $(this).addClass('oppenned');
+                event.stopPropagation();
+            })
+            $(document).delegate('body', 'click', function(event) {
+                $('.open').removeClass('oppenned');
+            })
+            $(document).delegate('.cls', 'click', function(event) {
+                $('.open').removeClass('oppenned');
+                event.stopPropagation();
+            });
+        });
+    </script>
+
+
+    <script type="text/javascript" src="/src/scripts/custom-dropdown.js"></script>
+    <script src="/src/scripts/index.js"></script>
+
+
+
+</body>
+
+</html>
