@@ -1,0 +1,6 @@
+<div class="btn__arrow"><a class="" href=""> До всіх новин та статей <span> <noscript><img
+                                src="https://emolium.dl.net.ua/wp-content/uploads/2022/02/icon-btn-arrow-red.svg"
+                                alt="" /></noscript><img class=" lazyloaded"
+                            src="https://emolium.dl.net.ua/wp-content/uploads/2022/02/icon-btn-arrow-red.svg"
+                            data-src="https://emolium.dl.net.ua/wp-content/uploads/2022/02/icon-btn-arrow-red.svg"
+                            alt=""> </span> </a></div>

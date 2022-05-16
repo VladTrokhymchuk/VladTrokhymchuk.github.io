@@ -16,16 +16,15 @@ html {
 }
 
 body {
-  font-family: Raleway;
+  font-family: Roboto;
+  // font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  // line-height: 24px;
-  line-height: 150%;
-  color: $textDark;
-  font-feature-settings: 'pnum' on, 'lnum' on;
-  // font-feature-settings: 'pnum'on, 'lnum'on;
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+  color: $gray;
 }
+
 
 br {
   content: " ";
@@ -34,7 +33,7 @@ br {
 }
 
 button {
-  font-family: Raleway;
+  font-family: Roboto;
   border: none;
   background: none;
   cursor: pointer;
@@ -42,7 +41,7 @@ button {
 
 a {
   text-decoration: none;
-  color: $red;
+  color: $green;
 }
 
 li {
@@ -58,11 +57,12 @@ img {
   height: auto;
 }
 
-// .otgs-development-site-front-end {
-//   display: none;
-// }
+.sub {
+  font-style: normal;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+}
 
-// mob
 h1,
 .h1 {
   font-weight: 700;
@@ -70,13 +70,7 @@ h1,
   line-height: 36px;
 }
 
-// .subtitle {
-//   font-weight: 400;
-//   font-size: 14px;
-//   line-height: 24px;
-//   letter-spacing: 1.4px;
-//   text-transform: uppercase;
-// }
+
 
 h2,
 .h2 {
@@ -93,99 +87,13 @@ h3,
   line-height: 28px;
 }
 
-// .citation {
-//   font-weight: 600;
-//   font-size: 18px;
-//   line-height: 24px;
-// }
-
-// strong,
-// .strong {
-//   font-weight: 700;
-//   font-size: 16px;
-//   line-height: 150%;
-// }
-
 .wrap {
   margin-right: auto;
   margin-left: auto;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 2rem;
+  padding-left: 2rem;
 }
 
-
-
-// blockquote {
-//   p {
-//     font-weight: 600;
-//     font-size: 1.8rem;
-//     line-height: 2.4rem;
-//   }
-// }
-
-// .quote {
-//   position: relative;
-//   padding: 3rem 0;
-
-//   &::before {
-//     content: '';
-//     display: flex;
-//     background: url(/wp-content/themes/Emolium/build/img/icons/icon-quote-top.svg) no-repeat;
-//     background-size: cover;
-//     width: 4rem;
-//     height: 2.6rem;
-
-//     position: absolute;
-//     top: 0px;
-//     left: -0.8rem;
-//   }
-
-//   &::after {
-//     content: '';
-//     background: url(/wp-content/themes/Emolium/build/img/icons/icon-quote-bottom.svg) no-repeat;
-//     background-size: cover;
-//     width: 4rem;
-//     height: 2.6rem;
-
-//     position: absolute;
-//     right: -0.8rem;
-//     bottom: 0;
-//   }
-
-//   p {
-//     text-align: center;
-//   }
-// }
-
-// mob end
-
-
-
-// @media (min-width: 1024px) {
-//   .quote {
-//     padding: 2.4rem 0;
-
-//     &::before {
-//       width: 6.8rem;
-//       height: 4.4rem;
-//       background-position-x: center;
-//       top: 2.5rem;
-//       left: -8.6rem;
-//     }
-
-//     &::after {
-//       width: 6.8rem;
-//       height: 4.4rem;
-//       background-position-x: center;
-//       right: -8.6rem;
-//       bottom: 2.5rem;
-//     }
-
-//     p {
-//       text-align: center;
-//     }
-//   }
-// }
 
 @media (min-width: 1280px) {
 
@@ -195,10 +103,6 @@ h3,
     line-height: 52px;
   }
 
-  // .subtitle {
-  //   font-size: 16px;
-  //   line-height: 150%;
-  // }
 
   h2,
   .h2 {
@@ -212,27 +116,10 @@ h3,
     line-height: 30px;
   }
 
-  // .citation {
-  //   font-size: 20px;
-  //   line-height: 28px;
-  // }
-
-  // strong,
-  // .strong {
-  //   font-size: 16px;
-  // }
-
   .wrap {
     padding-right: 80px;
     padding-left: 80px;
   }
-
-  // blockquote {
-  //   p {
-  //     font-size: 2rem;
-  //     line-height: 2.8rem;
-  //   }
-  // }
 }
 
 @media (min-width: 1440px) {
@@ -243,10 +130,10 @@ h3,
 }
 
 @media (min-width: 1900px) {
-  body {
-    font-size: 20px;
-    line-height: 32px;
-  }
+  // body {
+  //   font-size: 20px;
+  //   line-height: 32px;
+  // }
 
   h1,
   .h1 {
@@ -254,11 +141,6 @@ h3,
     line-height: 64px;
   }
 
-  // .subtitle {
-  //   font-size: 20px;
-  //   line-height: 32px;
-  //   letter-spacing: 1.8px;
-  // }
 
   h2,
   .h2 {
@@ -273,26 +155,8 @@ h3,
     line-height: 40px;
   }
 
-  // .citation {
-  //   font-size: 24px;
-  //   line-height: 32px;
-  // }
-
-  // strong,
-  // .strong {
-  //   font-size: 20px;
-  //   line-height: 32px;
-  // }
-
   .wrap {
     padding-right: 160px;
     padding-left: 160px;
   }
-
-  // blockquote {
-  //   p {
-  //     font-size: 2.4rem;
-  //     line-height: 3.2rem;
-  //   }
-  // }
 }
