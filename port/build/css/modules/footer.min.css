@@ -1,0 +1,104 @@
+@font-face {
+  font-family: Raleway;
+  font-display: swap;
+  src: url("../fonts/Raleway-Bold.woff2") format("woff2"), url("../fonts/Raleway-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: Raleway;
+  font-display: swap;
+  src: url("../fonts/Raleway-Regular.woff2") format("woff2"), url("../fonts/Raleway-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Raleway;
+  font-display: swap;
+  src: url("../fonts/Raleway-SemiBold.woff2") format("woff2"), url("../fonts/Raleway-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: Raleway;
+  font-display: swap;
+  src: url("../fonts/Raleway-Medium.woff2") format("woff2"), url("../fonts/Raleway-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+footer {
+  background: #464646;
+  color: #FFFFFF;
+  position: relative;
+  min-height: 40rem;
+  overflow: hidden;
+}
+footer .green_stick {
+  position: absolute;
+  bottom: 0;
+  left: 49%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+footer .green_stick svg {
+  max-width: 43.1rem;
+  width: 102%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  transform: rotate(180deg);
+}
+footer .green_stick svg g path {
+  fill: #66BB6A;
+}
+footer .cont_box {
+  position: absolute;
+  bottom: 1.5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #FFFFFF;
+}
+footer .cont_box img {
+  width: 14rem;
+}
+footer .box_items {
+  margin-top: 5rem;
+}
+footer .box_items .left {
+  display: flex;
+  font-weight: 900;
+  justify-content: center;
+}
+footer .box_items .left a {
+  margin-right: 0.5rem;
+  color: #66BB6A;
+  transition: all 0.3s;
+}
+footer .box_items .left a:hover {
+  color: #FFFFFF;
+}
+footer .box_items .left p {
+  color: #717171;
+}
+
+@media (min-width: 1024px) {
+  footer {
+    min-height: 37rem;
+  }
+  footer .green_stick {
+    left: unset;
+    transform: unset;
+  }
+  footer .green_stick svg {
+    max-width: 41.1rem;
+    width: 100%;
+  }
+  footer .box_items {
+    margin-top: 23rem;
+  }
+  footer .box_items .left {
+    justify-content: flex-start;
+  }
+}

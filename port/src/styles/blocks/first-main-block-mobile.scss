@@ -1,0 +1,93 @@
+@import '../core.scss';
+
+.first_section {
+    background: $bgSpaPrice;
+    padding-bottom: 10.8rem;
+
+    .services {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 3rem;
+        grid-row-gap: 3rem;
+        margin-top: -16rem;
+        position: relative;
+
+        .services_item {
+            background: $white;
+            border-radius: 3rem;
+            padding: 0 2rem 7rem 2rem;
+
+            .services_item_img--wrap {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                margin-top: 3rem;
+
+                img {
+                    border-radius: 50%;
+                    width: 27rem;
+                    height: 27rem;
+                    object-fit: cover;
+                }
+
+                .bg_dack {
+                    background: rgb(158 158 158 / 30%);
+                    width: 27rem;
+                    height: 27rem;
+                    position: absolute;
+                    border-radius: 50%;
+                }
+
+                .numb_room_img {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    font-size: 7.1rem;
+                    font-weight: 100;
+                    color: $white;
+                }
+            }
+
+            .box_cont_price {
+                margin-top: 5.2rem;
+                text-align: center;
+                color: $dark;
+
+                .h1 {
+                    font-size: 4rem;
+                    line-height: 100%;
+                    font-weight: 100;
+                }
+
+                .sub_title {
+                    margin-top: 0.9rem;
+                }
+            }
+
+            .btn_photo {
+                background: $green;
+                border-radius: 3rem;
+                color: $white;
+                transition: all 0.3s;
+                cursor: pointer;
+                min-height: 5.2rem;
+                max-width: 24rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto;
+                margin-top: 5.2rem;
+
+                &:hover {
+                    background: $dark;
+                }
+
+                span {
+                    font-size: 1.8rem;
+                }
+            }
+        }
+    }
+
+
+}

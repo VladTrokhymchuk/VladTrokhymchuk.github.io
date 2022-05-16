@@ -1,0 +1,101 @@
+@font-face {
+  font-family: Raleway;
+  font-display: swap;
+  src: url("../fonts/Raleway-Bold.woff2") format("woff2"), url("../fonts/Raleway-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: Raleway;
+  font-display: swap;
+  src: url("../fonts/Raleway-Regular.woff2") format("woff2"), url("../fonts/Raleway-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Raleway;
+  font-display: swap;
+  src: url("../fonts/Raleway-SemiBold.woff2") format("woff2"), url("../fonts/Raleway-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: Raleway;
+  font-display: swap;
+  src: url("../fonts/Raleway-Medium.woff2") format("woff2"), url("../fonts/Raleway-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+.contact {
+  position: relative;
+}
+.contact .col__image-wrap {
+  height: 130vh;
+}
+.contact .img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.contact .cont_box {
+  position: absolute;
+  top: 0;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background: rgba(158, 158, 158, 0.3);
+  width: 100%;
+  height: 100%;
+}
+.contact .cont_box .h1 {
+  text-align: center;
+  font-weight: 100;
+  font-size: 5rem;
+  line-height: 100%;
+  color: #FFFFFF;
+}
+.contact .cont_box .box {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 4rem;
+}
+.contact .cont_box .box .mapa {
+  width: 100%;
+  order: 2;
+  margin-top: 3rem;
+}
+.contact .cont_box .box .mapa iframe {
+  width: 100%;
+  min-height: 30rem;
+  border-radius: 3rem;
+}
+.contact .cont_box .box .way {
+  order: 1;
+  width: 100%;
+  text-align: center;
+  margin-top: 3rem;
+  color: #FFFFFF;
+}
+.contact .cont_box .box .way li {
+  margin-top: 0.8rem;
+}
+.contact .cont_box .box .way li:first-of-type {
+  margin-top: 0rem;
+}
+.contact .cont_box .box .phone {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  color: #FFFFFF;
+}
+.contact .cont_box .box .phone a {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: #66BB6A;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.contact .cont_box .box .phone a:hover {
+  color: #FFFFFF;
+}
