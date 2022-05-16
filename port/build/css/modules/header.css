@@ -5,23 +5,35 @@
   width: 100%;
   z-index: 250;
   transition: 0.4s all;
+  background: beige;
 }
-.header .main__nav {
-  height: 70px;
+.header .btn {
+  width: 9rem;
+}
+.header .btn__green {
+  width: 16rem;
+}
+.header .wrap__nav {
+  padding-right: 1rem;
+  padding-left: 1.2rem;
+}
+.header .main-nav {
+  height: 7rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.header .main__nav .header__logo {
+.header .main-nav .header__logo {
   display: flex;
   align-items: center;
-  max-width: 118px;
   z-index: 10;
+  color: #000;
+  font-family: "Inter";
+  font-style: normal;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
 }
-.header .main__nav .header__logo img {
-  max-width: 70%;
-}
-.header .main__nav .header__nav .navbar {
+.header .main-nav .header__nav .navbar {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -34,7 +46,7 @@
   transition: 0.6s;
   background-color: #EEEAE8;
 }
-.header .main__nav .header__nav .navbar .navbar--circle {
+.header .main-nav .header__nav .navbar .navbar--circle {
   width: 248px;
   height: 248px;
   background: #E2DEDC;
@@ -44,99 +56,94 @@
   right: -33px;
   z-index: -1;
 }
-.header .main__nav .header__nav .navbar .menu {
+.header .main-nav .header__nav .navbar .menu {
   margin-top: 92px;
   margin-bottom: 64px;
 }
-.header .main__nav .header__nav .navbar .menu ul {
+.header .main-nav .header__nav .navbar .menu ul {
   text-align: center;
 }
-.header .main__nav .header__nav .navbar .menu ul li {
+.header .main-nav .header__nav .navbar .menu ul li {
   margin-bottom: 36px;
 }
-.header .main__nav .header__nav .navbar .menu ul li a {
+.header .main-nav .header__nav .navbar .menu ul li a {
   font-weight: 500;
   font-size: 28px;
   line-height: 32px;
 }
-.header .main__nav .header__nav .navbar .menu ul li:first-of-type {
+.header .main-nav .header__nav .navbar .menu ul li:first-of-type {
   display: none;
 }
-.header .main__nav .header__nav .navbar .menu ul li:last-of-type {
+.header .main-nav .header__nav .navbar .menu ul li:last-of-type {
   margin-bottom: 0;
 }
-.header .main__nav .header__nav .navbar .menu ul li:hover a {
+.header .main-nav .header__nav .navbar .menu ul li:hover a {
   transition: all 0.3s;
   color: #AD0C26;
 }
-.header .main__nav .header__nav .navbar.open {
+.header .main-nav .header__nav .navbar.open {
   left: 0;
 }
-.header .main__nav #hamburger-button {
+.header .main-nav #hamburger-button {
   position: relative;
   z-index: 999;
-  width: 32px;
+  width: 2.4rem;
   margin: 0 auto;
 }
-.header .main__nav #hamburger-button:hover {
+.header .main-nav #hamburger-button:hover {
   cursor: pointer;
 }
-.header .main__nav #hamburger-button > span {
+.header .main-nav #hamburger-button > span {
   display: block;
   height: 2px;
-  width: 32px;
-  margin-bottom: 7px;
-  background-color: #AD0C26;
+  width: 2.4rem;
+  margin-bottom: 0.5rem;
+  border-radius: 0.3rem;
+  background-color: #22252E;
   transition-timing-function: linear;
   transition-duration: 0.6s;
 }
-.header .main__nav #hamburger-button span:nth-child(2) {
-  opacity: 0.6;
+.header .main-nav #hamburger-button > span:last-of-type {
+  margin-bottom: 0;
 }
-.header .main__nav #hamburger-button span:last-child {
-  opacity: 0.3;
+.header .main-nav #hamburger-button.open > span:first-child {
+  transform: translateY(7px) rotate(45deg);
 }
-.header .main__nav #hamburger-button.open > span:first-child {
-  transform: translateY(10px) rotate(45deg);
-}
-.header .main__nav #hamburger-button.open > span:nth-child(2) {
+.header .main-nav #hamburger-button.open > span:nth-child(2) {
   transform: translateY(0) rotate(-45deg);
   opacity: 1;
 }
-.header .main__nav #hamburger-button.open > span:last-child {
+.header .main-nav #hamburger-button.open > span:last-child {
   transform: translateY(-9px) rotate(-45deg);
   height: 0;
   opacity: 0;
 }
-.header .main__nav .hamburger__box {
+.header .main-nav .hamburger__box {
   z-index: 10;
   position: relative;
   align-items: center;
   justify-content: center;
-  width: 36px;
-  height: 36px;
-  padding-top: 8px;
 }
 
 @media (min-width: 1024px) {
   .header {
     width: 100%;
   }
-  .header .main__nav {
+  .header .main-nav {
     height: 104px;
   }
-  .header .main__nav .header__logo {
+  .header .main-nav .header__logo {
     width: 100%;
   }
-  .header .main__nav .header__logo img {
+  .header .main-nav .header__logo img {
     max-width: 100%;
   }
-  .header .main__nav .header__nav {
+  .header .main-nav .header__nav {
     width: 100%;
     display: flex;
     justify-content: center;
   }
-  .header .main__nav .header__nav .navbar {
+  .header .main-nav .header__nav .navbar {
     position: unset;
     flex-direction: row;
     justify-content: center;
@@ -145,51 +152,51 @@
     background-color: transparent;
     padding-top: 0;
   }
-  .header .main__nav .header__nav .navbar .navbar--circle {
+  .header .main-nav .header__nav .navbar .navbar--circle {
     display: none;
   }
-  .header .main__nav .header__nav .navbar .menu {
+  .header .main-nav .header__nav .navbar .menu {
     margin-top: 0;
     margin-bottom: 0;
     flex-grow: 1;
     display: flex;
     justify-content: flex-end;
   }
-  .header .main__nav .header__nav .navbar .menu ul {
+  .header .main-nav .header__nav .navbar .menu ul {
     display: flex;
     margin-right: 21%;
   }
-  .header .main__nav .header__nav .navbar .menu ul li {
+  .header .main-nav .header__nav .navbar .menu ul li {
     margin-bottom: 0;
     margin-right: 3.6rem;
   }
-  .header .main__nav .header__nav .navbar .menu ul li:last-of-type {
+  .header .main-nav .header__nav .navbar .menu ul li:last-of-type {
     margin-right: 0;
   }
-  .header .main__nav .header__nav .navbar .menu ul li a {
+  .header .main-nav .header__nav .navbar .menu ul li a {
     font-size: 1.6rem;
     line-height: 150%;
   }
-  .header .main__nav .hamburger__box {
+  .header .main-nav .hamburger__box {
     display: none;
   }
 }
 @media (min-width: 1900px) {
-  .header .main__nav {
+  .header .main-nav {
     height: 12rem;
   }
-  .header .main__nav .header__logo {
+  .header .main-nav .header__logo {
     width: 100%;
     max-width: 13.2rem;
   }
-  .header .main__nav .header__logo img {
+  .header .main-nav .header__logo img {
     width: 100%;
     max-width: 100%;
   }
-  .header .main__nav .header__nav .navbar .menu ul li {
+  .header .main-nav .header__nav .navbar .menu ul li {
     margin-right: 8.8rem;
   }
-  .header .main__nav .header__nav .navbar .menu ul li a {
+  .header .main-nav .header__nav .navbar .menu ul li a {
     font-size: 2rem;
     line-height: 160%;
   }

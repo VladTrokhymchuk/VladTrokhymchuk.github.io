@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 .warning {
   position: relative;
+  z-index: 777;
   background: #323642;
   padding: 1rem 3.8rem 1.3rem 2rem;
   display: flex;
@@ -35,25 +36,4 @@
 }
 .warning .warning-close .warning-close__img {
   display: flex;
-}
-
-@media (min-width: 768px) {
-  .warning {
-    padding: 0.8rem 3.8rem 0.8rem 2rem;
-    justify-content: center;
-  }
-  .warning .warning-item {
-    margin-right: 3.2rem;
-  }
-  .warning .warning-item .warning-item__desc {
-    margin-top: 0;
-  }
-  .warning .warning-item__margin {
-    order: 1;
-    margin-right: 0;
-  }
-  .warning .warning-close {
-    top: 0.8rem;
-    right: 1.6rem;
-  }
 }

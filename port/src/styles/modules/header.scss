@@ -6,8 +6,22 @@
     z-index: 250;
     transition: .4s all;
 
-    .main__nav {
-        height: 70px;
+    background: beige;
+
+    .btn{
+        width: 9rem;
+    }
+    .btn__green{
+        width: 16rem;
+    }
+
+    .wrap__nav {
+        padding-right: 1rem;
+        padding-left: 1.2rem;
+    }
+
+    .main-nav {
+        height: 7rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -15,13 +29,12 @@
         .header__logo {
             display: flex;
             align-items: center;
-            max-width: 118px;
-            // height: 48px;
             z-index: 10;
-
-            img {
-                max-width: 70%;
-            }
+            color: #000;
+            font-family: 'Inter';
+            font-style: normal;
+            font-size: 1.8rem;
+            line-height: 2.2rem;
         }
 
         .header__nav {
@@ -94,7 +107,7 @@
         #hamburger-button {
             position: relative;
             z-index: 999;
-            width: 32px;
+            width: 2.4rem;
             margin: 0 auto;
 
             &:hover {
@@ -104,22 +117,18 @@
             >span {
                 display: block;
                 height: 2px;
-                width: 32px;
-                margin-bottom: 7px;
-                background-color: $red;
+                width: 2.4rem;
+                margin-bottom: 0.5rem;
+                border-radius: 0.3rem;
+                background-color: $textColor;
                 transition-timing-function: linear;
                 transition-duration: 0.6s;
-            }
 
-            span {
-                &:nth-child(2) {
-                    opacity: 0.6;
-                }
-
-                &:last-child {
-                    opacity: 0.3;
+                &:last-of-type {
+                    margin-bottom: 0;
                 }
             }
+
         }
 
         #hamburger-button.open {
@@ -127,7 +136,7 @@
             >span {
 
                 &:first-child {
-                    transform: translateY(10px) rotate(45deg);
+                    transform: translateY(7px) rotate(45deg);
                 }
 
                 &:nth-child(2) {
@@ -143,15 +152,14 @@
             }
         }
 
-
         .hamburger__box {
             z-index: 10;
             position: relative;
             align-items: center;
             justify-content: center;
-            width: 36px;
-            height: 36px;
-            padding-top: 8px;
+            // width: 36px;
+            // height: 36px;
+            // padding-top: 8px;
         }
 
     }
@@ -162,7 +170,7 @@
     .header {
         width: 100%;
 
-        .main__nav {
+        .main-nav {
             height: 104px;
 
 
@@ -243,7 +251,7 @@
 
 @media (min-width: 1900px) {
     .header {
-        .main__nav {
+        .main-nav {
             height: 12rem;
 
             .header__logo {

@@ -1,1 +1,26 @@
 @import '../core';
+
+@media (min-width: 768px) {
+    .warning {
+        padding: 0.8rem 3.8rem 0.8rem 2rem;
+        justify-content: center;
+
+        .warning-item {
+            margin-right: 3.2rem;
+
+            .warning-item__desc {
+                margin-top: 0;
+            }
+        }
+
+        .warning-item__margin {
+            order: 1;
+            margin-right: 0;
+        }
+
+        .warning-close {
+            top: 0.8rem;
+            right: 1.6rem;
+        }
+    }
+}

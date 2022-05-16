@@ -30,6 +30,38 @@
   animation: moveArrow 750ms;
 }
 
+.btn {
+  padding: 1rem 0 1rem 0;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  text-align: center;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: #4CB649;
+  border: 0.1rem solid #4CB649;
+  border-radius: 3rem;
+  width: 20.5rem;
+  transition: all 0.3s;
+}
+.btn:hover {
+  color: #FFFFFF;
+  background: linear-gradient(0deg, #4CB649 0%, #5DDF5A 100%);
+  border: 0;
+  border-color: #4db64900;
+}
+
+.btn__green {
+  background: linear-gradient(0deg, #4CB649 0%, #5DDF5A 100%);
+  color: #FFFFFF;
+  border: 0;
+}
+.btn__green:hover {
+  color: #4CB649;
+  background: transparent;
+  border: 0.1rem solid #4CB649;
+}
+
 @-webkit-keyframes moveArrow {
   0% {
     -webkit-transform: translateX(0px);
