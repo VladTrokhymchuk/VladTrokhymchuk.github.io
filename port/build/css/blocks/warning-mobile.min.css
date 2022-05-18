@@ -9,6 +9,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  color: #889099;
 }
 .warning .warning-item .warning-item__alert {
   display: flex;

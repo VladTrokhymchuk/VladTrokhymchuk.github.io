@@ -2,19 +2,23 @@
 
 
 @media (min-width: 1024px) {
-    .first_section {
-        .services {
-            grid-template-columns: repeat(3, 1fr);
-            grid-row-gap: 10rem;
-            margin-top: -17rem;
+    .single-post {
+        display: flex;
 
-            .services_item {
-                .services_item_img--wrap {
-                    margin-top: -5rem;
+        .single-post__img,
+        .single-post__box-conten {
+            width: 50%;
+        }
 
-                }
-            }
+        .single-post__img {
+            height: 40rem;
+        }
+
+        .single-post__box-conten {
+            padding: 5.9rem 6rem 4rem 6rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
     }
-
 }

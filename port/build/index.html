@@ -65,18 +65,52 @@
                 <a class="header__logo" href=''>
                     <span>Company Name</span>
                 </a>
-                <button class="btn btn__green">
-                    <span class="">get started</span>
-                </button>
+
+                <div class="nav-box-btn">
+                    <button class="btn btn__white">
+                        <span class="">LOG IN</span>
+                    </button>
+                    <button class="btn btn__green">
+                        <span class="">get started</span>
+                    </button>
+                </div>
+
+
 
                 <nav class="header__nav">
                     <div class='navbar'>
-                        <div class="navbar--circle"></div>
-                        <div class="menu">
-                            <ul class="menu-list">
-                                <li class=""><a href="">Продукція</a></li>
-                                <li><a href="">Питання</a></li>
-                                <li class=""><a href="">Статті</a></li>
+                        <div class="jmenu">
+                            <ul>
+                                <li class="jm-dropdown">
+                                    <a class="jm-icon-dropdown" href="#">WHY US
+                                        <!-- <span class="jm-icon-dropdown"></span> -->
+                                    </a>
+                                    <ul>
+                                        <li class=""><a href="#">Apples</a></li>
+                                        <li><a href="#">Bananas and Pears</a></li>
+                                        <li><a href="#">Oranges</a></li>
+                                    </ul>
+                                </li>
+
+                                <li><a href="#">VPN APPS</a></li>
+
+                                <li class="jm-dropdown">
+                                    <a href="#">SUPPORT<span class="jm-icon-dropdown"></span></a>
+                                    <ul>
+                                        <li><a href="#">Apples</a></li>
+                                        <li><a href="#">Bananas and Pears</a></li>
+                                        <li><a href="#">Oranges</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="jm-dropdown active">
+                                    <a href="#">Resources<span class="jm-icon-dropdown"></span></a>
+                                    <ul>
+                                        <li><a href="#">Apples</a></li>
+                                        <li><a href="#">Bananas and Pears</a></li>
+                                        <li><a href="#">Oranges</a></li>
+                                    </ul>
+                                </li>
                             </ul>
                         </div>
 
@@ -87,9 +121,47 @@
                     </div>
                 </nav>
 
+
+
             </div>
         </div>
     </header>
+
+
+    <main>
+        <section class="wrap">
+            <div class="single-post">
+                <div class="single-post__img">
+                    <img src="img/Bitmap.png" alt="">
+                </div>
+                <div class="single-post__box-conten">
+                    <div class="single-post-title">
+                        <h2>TV Addons: Legal battle against Canadian media giants demonstrates severe
+                            consequences facing developers accused of copyright infringement
+                        </h2>
+                    </div>
+                    
+                    <div class="box-conten-body">
+                        <div class="post-meta">
+                            <div class="post-meta__group-top">
+                                <span class="group__user">Danica Sergison</span>
+                                <span class="group__date">|  JUL 08, 2018</span>
+                            </div>
+    
+                            <div class="post-meta__group-bottom">
+                                <span class="group-tags">Copyright, News, Open Source, Privacy</span>
+                                <a class="group__comment" href="#">0</a>
+                            </div>
+                           
+                        </div>
+                        
+                      
+                    </div>
+                </div>
+            </div>
+        </section>
+       
+    </main>
 
     <script src="js/libs/jquery-3.6.0.min.js"></script>
     <script src="js/modules/header/header.js"></script>
