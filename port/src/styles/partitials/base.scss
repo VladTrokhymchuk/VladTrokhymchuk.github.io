@@ -42,12 +42,19 @@ button {
 a {
   text-decoration: none;
   color: $green;
+  transition: all 0.3s;
+}
+
+input {
+  margin: 0;
+  font-family: 'Roboto';
 }
 
 li {
   list-style-type: none;
 
   a {
+    transition: all 0.3s;
     color: $textDark;
   }
 }
@@ -65,9 +72,9 @@ img {
 
 h1,
 .h1 {
-  font-weight: 700;
-  font-size: 35px;
-  line-height: 36px;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 44px;
 }
 
 
@@ -91,6 +98,13 @@ h3,
   margin-left: auto;
   padding-right: 2rem;
   padding-left: 2rem;
+}
+
+.wrap__main{
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 3rem;
+  padding-left: 3rem;
 }
 
 

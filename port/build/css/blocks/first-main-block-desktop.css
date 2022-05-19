@@ -17,4 +17,8 @@
     flex-direction: column;
     justify-content: space-between;
   }
+
+  .tags {
+    display: block;
+  }
 }
