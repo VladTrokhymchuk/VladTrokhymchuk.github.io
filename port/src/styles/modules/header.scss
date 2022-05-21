@@ -5,7 +5,7 @@
     width: 100%;
     z-index: 250;
     transition: .4s all;
-    background: beige;
+    // background: beige;
 
     .btn__green {
         width: 12.6rem;
@@ -323,7 +323,27 @@
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
+    .header {
+
+        .wrap__nav {
+            padding-right: 6rem;
+            padding-left: 8rem;
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    .header {
+
+        .wrap__nav {
+            padding-right: 6rem;
+            padding-left: 12rem;
+        }
+    }
+}
+
+@media (min-width: 1600px) {
     .header {
 
         .wrap__nav {

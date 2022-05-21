@@ -1,0 +1,188 @@
+@import '../core.scss';
+
+.pricing-bg {
+    background: linear-gradient(135deg, #3D4251 0%, #272B35 100%);
+    margin-top: 6.9rem;
+
+    .pricing {
+        padding-top: 6rem;
+        padding-bottom: 4.4rem;
+
+        .pricing__title {
+            width: 80%;
+            color: $white;
+            margin: 0 auto;
+            margin-bottom: 4rem;
+
+            h2 {
+                font-weight: 300;
+                font-size: 3.2rem;
+                line-height: 4.4rem;
+                text-align: center;
+            }
+        }
+
+        .pricing-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .item {
+                background: $white;
+                box-shadow: 0px 9px 18px -2px rgba(0, 0, 0, 0.75);
+                border: 1px solid $line;
+                border-radius: 0.6rem;
+                padding: 4.8rem 0 4rem 0;
+                margin-bottom: 2rem;
+                width: 100%;
+                max-width: 38rem;
+
+                &:last-of-type {
+                    margin-bottom: 0;
+                }
+            }
+
+            .item--focus {
+                border: 0.4rem solid $yellow;
+
+                .btn__white {
+                    background: linear-gradient(0deg, #FF8D00 3.81%, #FFA400 97.78%);
+                    color: $white;
+                    border: 0;
+
+                    &:hover {
+                        color: $yellow;
+                        background: transparent;
+                        border: 0.1rem solid $yellow;
+
+                    }
+                }
+            }
+
+            .pricing-card__elem {
+                margin: 0 auto;
+                max-width: 20.5rem;
+                height: 25rem;
+                justify-content: space-between;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+
+                // padding: 4.8rem 5.5rem 4rem 5.5rem;
+
+                text-align: center;
+
+
+                .elem-title {
+                    font-weight: 500;
+                    letter-spacing: 0.8px;
+                    text-transform: uppercase;
+                    // margin-bottom: 1.6rem;
+
+                    &::after {
+                        content: '';
+                        display: block;
+                        width: 2.4rem;
+                        height: 0.2rem;
+                        background: $green;
+                        margin: 0 auto;
+                        margin-top: 1.2rem;
+                    }
+                }
+
+                .elem-box {
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-end;
+                    padding-bottom: 1.8rem;
+                    border-bottom: 0.1rem solid $line;
+
+                    // margin-bottom: 2.7rem;
+
+                    span {
+                        font-weight: 300;
+                        font-size: 2.4rem;
+                        line-height: 3.2rem;
+
+                        &:first-child {
+                            margin-bottom: 2.2rem;
+                        }
+
+                        &:nth-of-type(2) {
+                            font-size: 5.6rem;
+                            line-height: 6.6rem;
+                            letter-spacing: -1.5px;
+                        }
+                    }
+                }
+
+                .elem-desc {
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+
+                    span,
+                    p {
+                        margin-right: 0.8rem;
+                    }
+
+                    .prev-sale {
+                        text-decoration-line: line-through;
+                        color: #F24458;
+                    }
+
+                    .save {
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+
+        .pay {
+            margin: 0 auto;
+            margin-top: 3.6rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 91.6rem;
+
+            .pay__title {
+                min-width: 10rem;
+                color: $white;
+                font-weight: 300;
+                font-size: 1.8rem;
+                line-height: 2.8rem;
+                margin-bottom: 2rem;
+            }
+
+            .pay__items-img {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+
+                .item__img {
+                    margin-bottom: 3rem;
+                }
+
+            }
+        }
+
+        .pricing__box-btn {
+            margin-top: 1rem;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+
+            .btn__arrow-animate {
+                margin-bottom: 3.8rem;
+
+                &:last-of-type {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}

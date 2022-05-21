@@ -1,0 +1,53 @@
+@import '../core.scss';
+
+.search {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+
+    .has-search {
+        position: relative;
+
+        .form-control {
+            display: block;
+            width: 100%;
+            height: calc(5.9rem);
+
+            font-weight: 300;
+            font-size: 1.8rem;
+            line-height: 2.8rem;
+
+            background-color: $white;
+            background-clip: padding-box;
+            border: 1px solid $bordrerSearch;
+            border-radius: 0.4rem;
+
+            &::placeholder {
+                color: $textColor;
+            }
+
+        }
+
+
+        .form-control-feedback {
+            position: absolute;
+            top: 50%;
+            left: 2rem;
+            transform: translateY(-50%);
+
+            &::before {
+                content: url(/img/svg/search.svg);
+                display: block;
+                width: 1.8rem;
+                height: 1.8rem;
+            }
+        }
+
+        .form-control {
+            padding-left: 5.8rem;
+            padding-top: 1.6rem;
+            padding-bottom: 1.5rem;
+
+        }
+    }
+
+}

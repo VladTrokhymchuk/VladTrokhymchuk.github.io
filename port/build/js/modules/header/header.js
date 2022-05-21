@@ -77,3 +77,22 @@ valuesSorted.forEach(x => {
   
   el.style.fontSize = `${fontSize}px`;
 });
+
+
+///btn
+$(".btn__arrow-animate").each(function(i, el) {
+  var tl = new TimelineMax({ paused: true });
+  var t = tl
+      .set($(el).find('.wrap_btn'), { overwrite: "all" })
+      .to($(el).find('.front'), 0.4, { y: "-50px", rotation: 15, ease: "power1.inOut", transformOrigin: "right center", overwrite: "all" }, 0)
+      .from($(el).find('.back'), 0.4, { y: "50px", top: 0, rotation: 15, ease: "power1.inOut", transformOrigin: "left center", overwrite: "all" }, 0)
+      .from($(el).find('.arrow-icon-hide > img'), 0.4, { x: "-50px", ease: "power1.inOut", overwrite: "all" }, 0)
+      .to($(el).find('.arrow-icon-show > img'), 0.4, { x: "50px", ease: "power1.inOut", overwrite: "all" }, 0);
+  el.animation = t;
+  
+  $(el).on("mouseenter", function() {
+      this.animation.play();
+  }).on("mouseleave", function() {
+      this.animation.reverse();
+  });
+});

@@ -1,0 +1,153 @@
+@import '../core.scss';
+
+.recent-post {
+    margin-top: 4rem;
+
+    .recent-post__left {
+        .recent-post__title {
+            margin-bottom: 4rem;
+        }
+
+        .single-post__recent {
+            margin-top: 2rem;
+            border: unset;
+            border-radius: 0;
+            filter: unset;
+            border-bottom: 0.1rem solid $line;
+
+            .single-post__img {
+                min-height: 20rem;
+                height: 20rem;
+            }
+
+            .single-post__box-conten {
+                padding: 2rem 0rem 4.5rem 0rem;
+
+                .box-conten-body {
+                    margin-top: 2.05rem;
+
+                    .post-meta {
+
+                        .post-meta__group-bottom,
+                        .group__comment {
+                            margin-top: 0.8rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        .btn-box {
+            margin-top: 6rem;
+
+            .btn__white {
+                margin: 0 auto;
+                display: block;
+                width: 100%;
+                max-width: 31.5rem;
+            }
+        }
+
+
+    }
+
+    .recent-post__right {
+        margin-top: 6rem;
+
+        .search {
+            display: none;
+        }
+
+        ul {
+            border-bottom: 0.1rem solid $line;
+            padding-bottom: 3rem;
+            margin-bottom: 3.2rem;
+
+            span {
+                margin-bottom: 2rem;
+            }
+
+            li {
+                display: flex;
+                margin-bottom: 1.6rem;
+
+                &:last-of-type {
+                    margin-bottom: 0;
+                }
+
+                &::before {
+                    content: '•';
+                    color: $green;
+                    font-size: 1.5rem;
+                    margin-right: 0.5rem;
+                }
+            }
+
+
+            .notice {
+                display: flex;
+                align-items: center;
+
+                &::before {
+                    content: url(/img/svg/dzin.svg);
+                    width: 6rem;
+                    height: 6rem;
+                    margin-right: 2rem;
+                }
+            }
+
+            .pop-post {
+                display: flex;
+                align-items: center;
+
+                &::before {
+                    content: url(/img/svg/pop.svg);
+                    width: 6rem;
+                    height: 6rem;
+                    margin-right: 2rem;
+                }
+            }
+        }
+
+
+        .banner {
+            display: flex;
+            max-width: 43rem;
+            margin: 0 auto;
+            margin-bottom: 6rem;
+
+            img {
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .tag-cloud {
+            .tag-cloud__title {
+                margin-bottom: 2rem;
+            }
+
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                border: 0;
+
+                li {
+                    cursor: pointer;
+                    margin-right: 0.5rem;
+                    transition: all 0.3s;
+
+                    &::before {
+                        content: none;
+                    }
+
+                    &:hover {
+                        color: $green !important;
+                    }
+                }
+            }
+        }
+
+    }
+
+}

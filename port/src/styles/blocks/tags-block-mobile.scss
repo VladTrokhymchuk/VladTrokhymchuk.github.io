@@ -1,0 +1,61 @@
+@import '../core.scss';
+
+.tags {
+    display: none;
+    margin-top: 3rem;
+
+    .tags__box {
+        background: $bgText;
+        border-radius: 0.4rem;
+        padding: 2.1rem 3.2rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-weight: 500;
+        line-height: 1.8rem;
+
+        ul {
+            display: flex;
+
+            span {
+                margin-right: 4.3rem;
+            }
+
+            li {
+                margin-right: 3.4rem;
+
+                &:last-of-type {
+                    margin-right: 0;
+                }
+
+                a {
+                    letter-spacing: 0.8px;
+                    color: $green;
+
+                    &:hover {
+                        color: $textDark;
+                    }
+                }
+            }
+        }
+
+        .tags__right {
+            a {
+                color: $textDark;
+
+                &:hover {
+                    color: $green;
+                }
+
+                &:first-of-type {
+                    margin-right: 3.1rem;
+                }
+            }
+
+        }
+    }
+}

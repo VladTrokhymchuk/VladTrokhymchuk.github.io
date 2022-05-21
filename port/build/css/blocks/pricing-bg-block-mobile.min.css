@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+.pricing-bg {
+  background: linear-gradient(135deg, #3D4251 0%, #272B35 100%);
+  margin-top: 6.9rem;
+}
+.pricing-bg .pricing {
+  padding-top: 6rem;
+  padding-bottom: 4.4rem;
+}
+.pricing-bg .pricing .pricing__title {
+  width: 80%;
+  color: #FFFFFF;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+}
+.pricing-bg .pricing .pricing__title h2 {
+  font-weight: 300;
+  font-size: 3.2rem;
+  line-height: 4.4rem;
+  text-align: center;
+}
+.pricing-bg .pricing .pricing-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pricing-bg .pricing .pricing-card .item {
+  background: #FFFFFF;
+  box-shadow: 0px 9px 18px -2px rgba(0, 0, 0, 0.75);
+  border: 1px solid #EBECED;
+  border-radius: 0.6rem;
+  padding: 4.8rem 0 4rem 0;
+  margin-bottom: 2rem;
+  width: 100%;
+  max-width: 38rem;
+}
+.pricing-bg .pricing .pricing-card .item:last-of-type {
+  margin-bottom: 0;
+}
+.pricing-bg .pricing .pricing-card .item--focus {
+  border: 0.4rem solid #FF8D00;
+}
+.pricing-bg .pricing .pricing-card .item--focus .btn__white {
+  background: linear-gradient(0deg, #FF8D00 3.81%, #FFA400 97.78%);
+  color: #FFFFFF;
+  border: 0;
+}
+.pricing-bg .pricing .pricing-card .item--focus .btn__white:hover {
+  color: #FF8D00;
+  background: transparent;
+  border: 0.1rem solid #FF8D00;
+}
+.pricing-bg .pricing .pricing-card .pricing-card__elem {
+  margin: 0 auto;
+  max-width: 20.5rem;
+  height: 25rem;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.pricing-bg .pricing .pricing-card .pricing-card__elem .elem-title {
+  font-weight: 500;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+.pricing-bg .pricing .pricing-card .pricing-card__elem .elem-title::after {
+  content: "";
+  display: block;
+  width: 2.4rem;
+  height: 0.2rem;
+  background: #4CB649;
+  margin: 0 auto;
+  margin-top: 1.2rem;
+}
+.pricing-bg .pricing .pricing-card .pricing-card__elem .elem-box {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 1.8rem;
+  border-bottom: 0.1rem solid #EBECED;
+}
+.pricing-bg .pricing .pricing-card .pricing-card__elem .elem-box span {
+  font-weight: 300;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+}
+.pricing-bg .pricing .pricing-card .pricing-card__elem .elem-box span:first-child {
+  margin-bottom: 2.2rem;
+}
+.pricing-bg .pricing .pricing-card .pricing-card__elem .elem-box span:nth-of-type(2) {
+  font-size: 5.6rem;
+  line-height: 6.6rem;
+  letter-spacing: -1.5px;
+}
+.pricing-bg .pricing .pricing-card .pricing-card__elem .elem-desc {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.pricing-bg .pricing .pricing-card .pricing-card__elem .elem-desc span,
+.pricing-bg .pricing .pricing-card .pricing-card__elem .elem-desc p {
+  margin-right: 0.8rem;
+}
+.pricing-bg .pricing .pricing-card .pricing-card__elem .elem-desc .prev-sale {
+  text-decoration-line: line-through;
+  color: #F24458;
+}
+.pricing-bg .pricing .pricing-card .pricing-card__elem .elem-desc .save {
+  font-weight: 700;
+}
+.pricing-bg .pricing .pay {
+  margin: 0 auto;
+  margin-top: 3.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 91.6rem;
+}
+.pricing-bg .pricing .pay .pay__title {
+  min-width: 10rem;
+  color: #FFFFFF;
+  font-weight: 300;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  margin-bottom: 2rem;
+}
+.pricing-bg .pricing .pay .pay__items-img {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.pricing-bg .pricing .pay .pay__items-img .item__img {
+  margin-bottom: 3rem;
+}
+.pricing-bg .pricing .pricing__box-btn {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.pricing-bg .pricing .pricing__box-btn .btn__arrow-animate {
+  margin-bottom: 3.8rem;
+}
+.pricing-bg .pricing .pricing__box-btn .btn__arrow-animate:last-of-type {
+  margin-bottom: 0;
+}
