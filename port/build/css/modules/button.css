@@ -42,7 +42,9 @@
   border: 0.1rem solid #4CB649;
   border-radius: 3rem;
   width: 20.5rem;
+  min-height: 4rem;
   transition: all 0.3s;
+  display: block;
 }
 .btn:hover {
   color: #FFFFFF;

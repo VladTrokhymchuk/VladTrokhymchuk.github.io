@@ -105,16 +105,31 @@ h3,
     padding-right: 8rem;
     padding-left: 8rem;
   }
+
+  .wrap__main {
+    padding-right: 8rem;
+    padding-left: 8rem;
+  }
 }
 @media (min-width: 1440px) {
+  .wrap {
+    padding-right: 12rem;
+    padding-left: 12rem;
+  }
+
+  .wrap__main {
+    padding-right: 12rem;
+    padding-left: 12rem;
+  }
+}
+@media (min-width: 1600px) {
   .wrap {
     padding-right: 20rem;
     padding-left: 20rem;
   }
-}
-@media (min-width: 1900px) {
-  .wrap {
-    padding-right: 160px;
-    padding-left: 160px;
+
+  .wrap__main {
+    padding-right: 20rem;
+    padding-left: 20rem;
   }
 }
