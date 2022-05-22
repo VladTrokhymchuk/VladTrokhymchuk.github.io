@@ -1,2 +1,158 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+footer {
+  padding: 4.4rem 2rem 4.9rem 2rem;
+}
+footer .footer-title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  color: #000000;
+}
+footer ul li {
+  transition: all 0.3s;
+  cursor: pointer;
+}
+footer ul li:hover {
+  color: #4CB649;
+}
+footer .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0fr 0fr 0fr;
+  gap: 3.5rem 2rem;
+  grid-auto-flow: row;
+  grid-template-areas: "one two" "three four" "five five";
+}
+footer .one {
+  grid-area: one;
+}
+footer .two {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0fr 0fr;
+  gap: 3.5rem 0rem;
+  grid-auto-flow: row;
+  grid-template-areas: "." ".";
+  grid-area: two;
+}
+footer .three {
+  grid-area: three;
+}
+footer .four {
+  grid-area: four;
+}
+footer .five {
+  grid-area: five;
+}
+footer .container {
+  margin-top: 5.4rem;
+}
+footer .container .title-g {
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  margin-bottom: 1.8rem;
+}
+footer .container p,
+footer .container li {
+  color: #889099;
+}
+footer .container .social .social-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+footer .container .social .social-items .icon-item {
+  margin-bottom: 1rem;
+  flex-basis: 33.33333%;
+}
+footer .container ul li {
+  margin-bottom: 1rem;
+}
+footer .container ul li:last-of-type {
+  margin-bottom: 0;
+}
+footer .container .footer-about p {
+  margin-bottom: 1.8rem;
+}
+footer .container .footer-about p:last-of-type {
+  margin-bottom: 0;
+}
+
+@media (min-width: 1024px) {
+  footer .footer-title {
+    font-size: 2.7rem;
+    line-height: 3.3rem;
+  }
+  footer .container {
+    margin-top: 5.8rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 3fr;
+    grid-template-rows: 0fr 0fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "one two three five" ". . . four";
+  }
+  footer .container .title-g {
+    margin-bottom: 2rem;
+  }
+  footer .container .social .title-g {
+    margin-bottom: 2.5rem;
+  }
+  footer .container .social .social-items {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+  footer .container .social .social-items .icon-item {
+    display: flex;
+    flex-basis: unset;
+    margin-bottom: 0;
+    margin-right: 3.1rem;
+  }
+  footer .one {
+    grid-area: one;
+  }
+  footer .two {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0fr 0fr;
+    gap: 5.8rem 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "." ".";
+    grid-area: two;
+  }
+  footer .three {
+    grid-area: three;
+  }
+  footer .five {
+    grid-area: five;
+  }
+  footer .four {
+    grid-area: four;
+  }
+}
+@media (min-width: 1280px) {
+  footer {
+    padding-top: 8.4rem;
+    padding-bottom: 9rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+}
+@media (min-width: 1440px) {
+  footer {
+    padding-left: 12rem;
+    padding-right: 12rem;
+  }
+}
+@media (min-width: 1600px) {
+  footer {
+    padding-left: 20rem;
+    padding-right: 20rem;
+  }
+}

@@ -47,7 +47,20 @@
         right: 1rem;
 
         .warning-close__img {
+            cursor: pointer;
             display: flex;
+
+            &:hover {
+                svg {
+                    path {
+                        transition: all 0.3s;
+
+                        fill: $white;
+
+                    }
+                }
+            }
+
         }
     }
 }

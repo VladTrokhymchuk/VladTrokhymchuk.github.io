@@ -36,5 +36,10 @@
   right: 1rem;
 }
 .warning .warning-close .warning-close__img {
+  cursor: pointer;
   display: flex;
+}
+.warning .warning-close .warning-close__img:hover svg path {
+  transition: all 0.3s;
+  fill: #FFFFFF;
 }

@@ -1,10 +1,223 @@
 @import '../core.scss';
 
-footer {}
+footer {
+    padding: 4.4rem 2rem 4.9rem 2rem;
+
+    .footer-title {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+        color: #000000;
+    }
+
+    ul {
+        li {
+            transition: all 0.3s;
+            cursor: pointer;
+
+            &:hover {
+                color: $green;
+            }
+        }
+    }
 
 
-// @media (min-width: 1024px) {
-//     footer {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0fr 0fr 0fr;
+        gap: 3.5rem 2rem;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "one two"
+            "three four"
+            "five five";
+    }
 
-//     }
-// }
+    .one {
+        grid-area: one;
+    }
+
+    .two {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0fr 0fr;
+        gap: 3.5rem 0rem;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "."
+            ".";
+        grid-area: two;
+    }
+
+    .three {
+        grid-area: three;
+    }
+
+    .four {
+        grid-area: four;
+    }
+
+    .five {
+        grid-area: five;
+    }
+
+
+    .container {
+        margin-top: 5.4rem;
+
+        .title-g {
+            font-weight: 500;
+            font-size: 1.4rem;
+            line-height: 1.8rem;
+            letter-spacing: 0.1rem;
+            text-transform: uppercase;
+            margin-bottom: 1.8rem;
+        }
+
+        p,
+        li {
+            color: $gray;
+        }
+
+        .social {
+            .social-items {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                .icon-item {
+                    margin-bottom: 1rem;
+                    flex-basis: 33.33333%;
+                }
+            }
+
+        }
+
+        ul {
+
+            li {
+
+                margin-bottom: 1rem;
+
+                &:last-of-type {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        .footer-about {
+            p {
+                margin-bottom: 1.8rem;
+
+                &:last-of-type {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+
+
+
+}
+
+
+@media (min-width: 1024px) {
+    footer {
+        .footer-title {
+            font-size: 2.7rem;
+            line-height: 3.3rem;
+        }
+
+        .container {
+            margin-top: 5.8rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 3fr;
+            grid-template-rows: 0fr 0fr;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            grid-template-areas:
+                "one two three five"
+                ". . . four";
+
+            .title-g {
+                margin-bottom: 2rem;
+            }
+
+            .social {
+                .title-g {
+                    margin-bottom: 2.5rem;
+                }
+
+                .social-items {
+                    flex-wrap: nowrap;
+                    justify-content: flex-start;
+
+                    .icon-item {
+                        display: flex;
+                        flex-basis: unset;
+                        margin-bottom: 0;
+                        margin-right: 3.1rem;
+
+                    }
+                }
+            }
+        }
+
+
+        .one {
+            grid-area: one;
+        }
+
+        .two {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 0fr 0fr;
+            gap: 5.8rem 0px;
+            grid-auto-flow: row;
+            grid-template-areas:
+                "."
+                ".";
+            grid-area: two;
+        }
+
+        .three {
+            grid-area: three;
+        }
+
+        .five {
+            grid-area: five;
+        }
+
+        .four {
+            grid-area: four;
+        }
+
+    }
+}
+
+@media (min-width: 1280px) {
+    footer {
+        padding-top: 8.4rem;
+        padding-bottom: 9rem;
+        padding-left: 8rem;
+        padding-right: 8rem;
+    }
+}
+
+@media (min-width: 1440px) {
+    footer {
+        padding-left: 12rem;
+        padding-right: 12rem;
+    }
+}
+
+@media (min-width: 1600px) {
+    footer {
+        padding-left: 20rem;
+        padding-right: 20rem;
+    }
+}
