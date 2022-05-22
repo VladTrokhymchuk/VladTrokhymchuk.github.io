@@ -132,7 +132,7 @@
   color: #889099;
 }
 .single-post .box-conten-body .post-meta .post-meta__group-bottom .group__comment::before {
-  content: url(/img/svg/comment.svg);
+  content: url(/build/img/svg/comment.svg);
   display: block;
   width: 1.6rem;
   height: 1.6rem;
