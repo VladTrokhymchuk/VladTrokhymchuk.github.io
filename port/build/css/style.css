@@ -1362,3 +1362,6 @@ footer .container .footer-about p:last-of-type {
     padding-right: 20rem;
   }
 }
+main {
+  overflow: hidden;
+}
